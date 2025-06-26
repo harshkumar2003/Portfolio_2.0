@@ -10,20 +10,48 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
           {/* Copyright */}
           <div className="text-gray-400 text-sm lg:text-base text-center sm:text-left">
-            © 2024 Harsh Kumar. All rights reserved.
+            © 2025 Harsh Kumar. All rights reserved.
           </div>
 
           {/* Social Links */}
           <div className="flex space-x-4 lg:space-x-6">
-            <Button variant="ghost" size="icon" className="text-gray-400 hover:text-white h-10 w-10">
-              <Github className="h-4 w-4 lg:h-5 lg:w-5" />
-            </Button>
-            <Button variant="ghost" size="icon" className="text-gray-400 hover:text-white h-10 w-10">
-              <Linkedin className="h-4 w-4 lg:h-5 lg:w-5" />
-            </Button>
-            <Button variant="ghost" size="icon" className="text-gray-400 hover:text-white h-10 w-10">
-              <Mail className="h-4 w-4 lg:h-5 lg:w-5" />
-            </Button>
+            <a
+                      href="https://github.com/harshkumar2003"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Button
+                        variant="ghost"
+                        size="icon"
+                        className="text-gray-400 "
+                      >
+                        <Github className="h-5 w-5" />
+                      </Button>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/harshkumar2003/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Button
+                        variant="ghost"
+                        size="icon"
+                        className="text-gray-400 "
+                      >
+                        <Linkedin className="h-5 w-5" />
+                      </Button>
+                    </a>
+
+                    {/* Email */}
+                    <a href="mailto:harshk8876@gmail.com">
+                      <Button
+                        variant="ghost"
+                        size="icon"
+                        className="text-gray-400 "
+                      >
+                        <Mail className="h-5 w-5" />
+                      </Button>
+                    </a>
           </div>
         </div>
       </div>
